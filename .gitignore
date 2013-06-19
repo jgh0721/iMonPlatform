@@ -1,0 +1,19 @@
+.svn
+
+# Visual Studio 
+
+*.sdf
+.suo
+*.opensdf
+.ipch
+ipch
+
+# Project
+
+_build
+_object
+GeneratedFiles
+
+clientSrc/commonLibrary
+clientSrc/externalLibs
+documentation/build
