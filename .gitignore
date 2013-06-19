@@ -3,7 +3,7 @@
 # Visual Studio 
 
 *.sdf
-.suo
+*suo
 *.opensdf
 .ipch
 ipch
