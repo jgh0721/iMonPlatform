@@ -1,5 +1,19 @@
 iMonPlatform
-    - iMon ÅëÇÕ ¹èÆ÷, ÀÎÁõ ¼Ö·ç¼Ç
+    - iMon í†µí•© ë°°í¬, ì¸ì¦ ì†”ë£¨ì…˜
     
 
+    Required Compiler 
+        - VS 2012 With Update 2
+        
+    Required Database
+        - MySQL
+
+    Required Library
+        - Qt        
+        - Boost
+        - QxORM
+        - libTorrent
+        - MySQL
+        
+        
         
