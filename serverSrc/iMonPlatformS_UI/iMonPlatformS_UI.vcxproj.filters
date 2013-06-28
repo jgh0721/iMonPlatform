@@ -33,6 +33,18 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="라이브러리">
+      <UniqueIdentifier>{4f457f0c-dee7-48c1-b604-561fca20f4f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="라이브러리\내부 라이브러리">
+      <UniqueIdentifier>{7da1ef13-8683-46ad-8a0f-5fd7e238bbe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="라이브러리\외부 라이브러리">
+      <UniqueIdentifier>{a125328c-754b-4d80-9cbd-69fd10828f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="라이브러리\고유 라이브러리">
+      <UniqueIdentifier>{4bc620c5-3516-49d8-8f0c-bd2af65e152d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -60,6 +72,9 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_imonplatforms_ui.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeDefs.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
