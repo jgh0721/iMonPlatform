@@ -48,40 +48,51 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>UNICODE;WIN32;QT_CORE_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CONCURRENT_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_CORE_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CONCURRENT_LIB;QT_GUI_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtConcurrent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>.;$(BOOST_DIR);$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtConcurrent;$(SolutionDir)libs\commonLibs;$(SolutionDir)libs\uniqueLibs;$(SolutionDir)libs\externalLibs\QxOrm\include;$(SolutionDir)libs\externalLibs\libTorrent\include;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalOptions>-Zm384 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;qtmaind.lib;Qt5Cored.lib;Qt5Networkd.lib;Qt5Sqld.lib;Qt5Concurrentd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(BOOST_DIR)\lib\x86;$(SolutionDir)libs\externalLibs\QxOrm\libs\Qt5-VC2010-X86-S;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;qtmaind.lib;Qt5Cored.lib;Qt5Networkd.lib;Qt5Sqld.lib;Qt5Concurrentd.lib;Qt5Guid.lib;Qt5Xmld.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>UNICODE;WIN32;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CONCURRENT_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CONCURRENT_LIB;QT_GUI_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DebugInformationFormat />
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtConcurrent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(BOOST_DIR);$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtConcurrent;$(SolutionDir)libs\commonLibs;$(SolutionDir)libs\uniqueLibs;$(SolutionDir)libs\externalLibs\QxOrm\include;$(SolutionDir)libs\externalLibs\libTorrent\include;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalOptions>-Zm384 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;qtmain.lib;Qt5Core.lib;Qt5Network.lib;Qt5Sql.lib;Qt5Concurrent.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(BOOST_DIR)\lib\x86;$(SolutionDir)libs\externalLibs\QxOrm\libs\Qt5-VC2010-X86-S;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;qtmain.lib;Qt5Core.lib;Qt5Network.lib;Qt5Sql.lib;Qt5Concurrent.lib;Qt5Gui.lib;Qt5Xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\libs\commonLibs\cmnConverter.cpp" />
+    <ClCompile Include="..\..\libs\commonLibs\cmnDateTime.cpp" />
+    <ClCompile Include="..\..\libs\commonLibs\cmnFormatter.cpp" />
+    <ClCompile Include="..\..\libs\commonLibs\cmnLogger.cpp" />
+    <ClCompile Include="..\..\libs\commonLibs\cmnPath.cpp" />
+    <ClCompile Include="..\..\libs\commonLibs\cmnPCInfo.cpp" />
+    <ClCompile Include="..\..\libs\commonLibs\cmnUtils.cpp" />
+    <ClCompile Include="..\..\libs\commonLibs\cmnWinUtils.cpp" />
+    <ClCompile Include="..\..\libs\uniqueLibs\TypeDefsS.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -89,7 +100,28 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\libs\commonLibs\cmnConverter.h" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnDateTime.h" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Converter.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Float.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Format.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Integer.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Parse.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Renderder.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_String.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Utils.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnLogger.hpp" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnPath.h" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnPCInfo.h" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnUtils.h" />
+    <ClInclude Include="..\..\libs\commonLibs\cmnWinUtils.h" />
+    <ClInclude Include="..\..\libs\uniqueLibs\TypeDefsS.h" />
     <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\documentation\iMonPlatform.proto" />
+    <None Include="..\..\documentation\iMonPlatformAdmin.proto" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

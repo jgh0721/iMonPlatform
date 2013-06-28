@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iMonPlatformS_SVC", "serverSrc\iMonPlatformS_SVC\iMonPlatformS_SVC.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iMonPlatformS_UI", "serverSrc\iMonPlatformS_UI\iMonPlatformS_UI.vcxproj", "{F31129DD-63BA-4E3C-B3F4-DCC19536FEF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DA94EF9-7ABE-460B-AACC-C7956A727B82}"
+	ProjectSection(SolutionItems) = preProject
+		libs\uniqueLibs\commonTypeDefs.cpp = libs\uniqueLibs\commonTypeDefs.cpp
+		libs\uniqueLibs\commonTypeDefs.h = libs\uniqueLibs\commonTypeDefs.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -19,6 +19,18 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="라이브러리">
+      <UniqueIdentifier>{082fa25b-069e-4d14-91e5-c716762e521a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="라이브러리\고유 라이브러리">
+      <UniqueIdentifier>{bb280b99-826f-45ce-88f5-ee1cc8e6d0bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="라이브러리\내부 라이브러리">
+      <UniqueIdentifier>{ec443a3a-dc8f-4691-a9f4-d1994dd38d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="라이브러리\외부 라이브러리">
+      <UniqueIdentifier>{34912d62-c6ff-448c-94f2-c17246d5d708}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,10 +39,96 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\libs\uniqueLibs\TypeDefsS.cpp">
+      <Filter>라이브러리\고유 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\commonLibs\cmnConverter.cpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\commonLibs\cmnDateTime.cpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\commonLibs\cmnFormatter.cpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\commonLibs\cmnLogger.cpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\commonLibs\cmnPath.cpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\commonLibs\cmnPCInfo.cpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\commonLibs\cmnUtils.cpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\commonLibs\cmnWinUtils.cpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\libs\uniqueLibs\TypeDefsS.h">
+      <Filter>라이브러리\고유 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnConverter.h">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnDateTime.h">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Converter.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Float.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Format.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Integer.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Parse.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Renderder.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_String.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnFormatter_Utils.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnLogger.hpp">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnPath.h">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnPCInfo.h">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnUtils.h">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\commonLibs\cmnWinUtils.h">
+      <Filter>라이브러리\내부 라이브러리</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\documentation\iMonPlatform.proto">
+      <Filter>라이브러리\외부 라이브러리</Filter>
+    </None>
+    <None Include="..\..\documentation\iMonPlatformAdmin.proto">
+      <Filter>라이브러리\외부 라이브러리</Filter>
+    </None>
   </ItemGroup>
 </Project>
